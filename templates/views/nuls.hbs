@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wazirx</title>
+    <style>
+        .mcontainer{
+            background-color:grey;
+            height:500px;
+            border-radius: 30px;
+        }
+        .high-low-volume{
+            display: flex;
+            background-color:black;
+        }
+        h1{
+            text-align: center;
+        }
+        .h3-hlv{
+            padding-left: 70px;
+            padding-right:70px ;
+            margin:20px;
+            color:white;
+        }
+        .type-buy-sell{
+            display: flex;
+            background-color:red;
+            margin-top:330px;
+        }
+        .h3-tbs{
+            padding-left: 120px;
+            padding-right:120px ;
+            margin:20px;
+        }
+
+    </style>
+</head>
+<body>
+    {{>navbar}}
+    <div class="mcontainer">
+        <h1>{{name}}</h1>
+        <div class="high-low-volume">
+            <h3 class="h3-hlv">Open: {{open}}</h3>
+            <h3 class="h3-hlv">High: {{high}}</h3>
+            <h3 class="h3-hlv">Low: {{low}}</h3>
+            <h3 class="h3-hlv">Volume: {{volume}}</h3>
+        </div>
+        <div class="type-buy-sell">
+            <h3 class="h3-tbs">Type: {{type}}</h3>
+            <h3 class="h3-tbs">Buy: {{buy}}</h3>
+            <h3 class="h3-tbs">Sell:{{sell}}</h3>
+        </div>
+    </div>
+</body>
+</html>
